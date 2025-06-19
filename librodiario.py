@@ -1,5 +1,14 @@
 from datetime import datetime
 from typing import List, Dict
+import logging
+import traceback
+
+#Configuración de logging
+logging.basicConfig(
+    filename='log_contable.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 class MontoInvalidoError(Exception):
     """Excepción lanzada cuando el monto es cero o negativo."""
@@ -17,13 +26,13 @@ class LibroDiario:
         try:
             #Controla si el tipo es ingreso o egreso.
             if tipo.lower() not in ("ingreso", "egreso"):
-                raise ValueError("Tipo de transacción inválido, debe poner 'ingreso' o 'egreso'.")
+                raise ValueError("Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'.")
 
             #Controla si el formato correcto de fecha año-mes-día (2025-06-19).
             try:
                 fecha_dt = datetime.strptime(fecha, "%Y-%m-%d") 
             except ValueError:
-                raise ValueError("Formato de fecha inválido, debe usar el formato: yyyy-mm-dd.")
+                raise ValueError("Formato de fecha invalido, debe usar el formato: yyyy-mm-dd.")
 
             #Controla si el monto el mayor o menos a 0.
             if monto <= 0:
@@ -38,7 +47,12 @@ class LibroDiario:
             }
             self.transacciones.append(transaccion)
 
+            #Registrar transacción exitosa
+            logging.info(f"Transaccion registrada: {fecha} | {descripcion} | {monto} | {tipo}")
+
         except (ValueError, MontoInvalidoError) as e:
+            error_line = traceback.format_exc().strip().splitlines()[-1]
+            logging.error(f"{e} - Linea: {error_line}")
             print(f"[ERROR] {e}")
 
     def calcular_resumen(self) -> Dict[str, float]:

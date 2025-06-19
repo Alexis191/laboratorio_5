@@ -1,0 +1,16 @@
+2025-06-19 17:56:47,475 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80 | InGrEso
+2025-06-19 17:56:47,478 - ERROR - El monto debe ser mayor a cero. - Linea: librodiario.MontoInvalidoError: El monto debe ser mayor a cero.
+2025-06-19 17:56:47,480 - ERROR - Formato de fecha invalido, debe usar el formato: yyyy-mm-dd. - Linea: ValueError: Formato de fecha invalido, debe usar el formato: yyyy-mm-dd.
+2025-06-19 17:56:47,481 - ERROR - Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'. - Linea: ValueError: Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'.
+2025-06-19 17:57:10,860 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80 | InGrEso
+2025-06-19 17:57:10,860 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 50 | EGreSO
+2025-06-19 17:57:10,866 - ERROR - Formato de fecha invalido, debe usar el formato: yyyy-mm-dd. - Linea: ValueError: Formato de fecha invalido, debe usar el formato: yyyy-mm-dd.
+2025-06-19 17:57:10,867 - ERROR - Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'. - Linea: ValueError: Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'.
+2025-06-19 17:57:48,499 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80 | InGrEso
+2025-06-19 17:57:48,499 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 50 | EGreSO
+2025-06-19 17:57:48,499 - INFO - Transaccion registrada: 2025-06-19 | Venta de pantalla ENV | 200 | ingreso
+2025-06-19 17:57:48,503 - ERROR - Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'. - Linea: ValueError: Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'.
+2025-06-19 17:58:01,921 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80 | InGrEso
+2025-06-19 17:58:01,921 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 50 | EGreSO
+2025-06-19 17:58:01,921 - INFO - Transaccion registrada: 2025-06-19 | Venta de pantalla ENV | 200 | ingreso
+2025-06-19 17:58:01,921 - INFO - Transaccion registrada: 2025-06-16 | Compra de mouse Logitech | 100 | egreso
