@@ -84,7 +84,6 @@ class LibroDiario:
             logging.critical(f"No se encontro el archivo: {path}")
             print(f"[CRITICO] No se encontro el archivo: {path}")
 
-
     def calcular_resumen(self) -> Dict[str, float]:
         """Devuelve el resumen total de ingresos y egresos."""
         resumen = {"ingresos": 0.0, "egresos": 0.0}
@@ -94,3 +93,18 @@ class LibroDiario:
             else:
                 resumen["egresos"] += transaccion["monto"]
         return resumen
+    
+    def exportar_resumen(self, path: str) -> None:
+        """Exporta el resumen contable a un archivo especificado."""
+        resumen = self.calcular_resumen()
+        try:
+            with open(path, "w", encoding="utf-8") as archivo:
+                archivo.write("Resumen contable:\n")
+                archivo.write(f"Total ingresos: {resumen['ingresos']}\n")
+                archivo.write(f"Total egresos: {resumen['egresos']}\n")
+            logging.info(f"Resumen exportado correctamente a {path}")
+        except Exception as e:
+            import traceback
+            error_line = traceback.format_exc().strip().splitlines()[-1]
+            logging.error(f"Error al exportar resumen: {e} - Línea: {error_line}")
+            print(f"[ERROR] No se pudo exportar el resumen: {e}")

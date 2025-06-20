@@ -1,0 +1,3 @@
+Resumen contable:
+Total ingresos: 280.0
+Total egresos: 150.0

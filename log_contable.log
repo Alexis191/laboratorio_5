@@ -27,3 +27,11 @@
 2025-06-19 19:39:29,577 - ERROR - Linea 7: could not convert string to float: 'formato' - Linea: ValueError: could not convert string to float: 'formato'
 2025-06-19 19:39:29,578 - ERROR - Linea 8: Formato incorrecto -> linea que;no cumple;formato
 2025-06-19 19:39:29,578 - ERROR - Linea 9: Formato incorrecto -> 
+2025-06-19 19:45:01,426 - INFO - Transaccion registrada: 2025-06-19 | Venta de monitor ENV | 250.0 | ingreso
+2025-06-19 19:45:01,426 - INFO - Transaccion registrada: 2025-06-18 | Compra insumos electrónicos | 50.0 | egreso
+2025-06-19 19:45:01,426 - INFO - Resumen exportado correctamente a resumen_contable.txt
+2025-06-19 19:45:29,346 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80 | InGrEso
+2025-06-19 19:45:29,346 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 50 | EGreSO
+2025-06-19 19:45:29,346 - INFO - Transaccion registrada: 2025-06-19 | Venta de pantalla ENV | 200 | ingreso
+2025-06-19 19:45:29,346 - INFO - Transaccion registrada: 2025-06-16 | Compra de mouse Logitech | 100 | egreso
+2025-06-19 19:45:29,346 - INFO - Resumen exportado correctamente a resumen_contable.txt
