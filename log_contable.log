@@ -35,3 +35,11 @@
 2025-06-19 19:45:29,346 - INFO - Transaccion registrada: 2025-06-19 | Venta de pantalla ENV | 200 | ingreso
 2025-06-19 19:45:29,346 - INFO - Transaccion registrada: 2025-06-16 | Compra de mouse Logitech | 100 | egreso
 2025-06-19 19:45:29,346 - INFO - Resumen exportado correctamente a resumen_contable.txt
+2025-06-19 19:51:49,716 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80 | InGrEso
+2025-06-19 19:51:49,716 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 50 | EGreSO
+2025-06-19 19:51:49,716 - INFO - Transaccion registrada: 2025-06-19 | Venta de pantalla ENV | 200 | ingreso
+2025-06-19 19:51:49,716 - INFO - Transaccion registrada: 2025-06-16 | Compra de mouse Logitech | 100 | egreso
+2025-06-19 19:52:08,823 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80 | InGrEso
+2025-06-19 19:52:08,829 - ERROR - El monto debe ser mayor a cero. - Linea: librodiario.MontoInvalidoError: El monto debe ser mayor a cero.
+2025-06-19 19:52:08,832 - ERROR - Formato de fecha invalido, debe usar el formato: yyyy-mm-dd. - Linea: ValueError: Formato de fecha invalido, debe usar el formato: yyyy-mm-dd.
+2025-06-19 19:52:08,833 - ERROR - Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'. - Linea: ValueError: Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'.
