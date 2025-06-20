@@ -14,3 +14,16 @@
 2025-06-19 17:58:01,921 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 50 | EGreSO
 2025-06-19 17:58:01,921 - INFO - Transaccion registrada: 2025-06-19 | Venta de pantalla ENV | 200 | ingreso
 2025-06-19 17:58:01,921 - INFO - Transaccion registrada: 2025-06-16 | Compra de mouse Logitech | 100 | egreso
+2025-06-19 19:36:19,444 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80.0 | InGrEso
+2025-06-19 19:36:19,445 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 150.0 | eGRESo
+2025-06-19 19:38:19,883 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80.0 | InGrEso
+2025-06-19 19:38:19,884 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 150.0 | eGRESo2025-06-19 19:39:09,187 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80.0 | InGrEso
+2025-06-19 19:39:09,187 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 150.0 | eGRESo2025-06-19 19:39:29,570 - INFO - Transaccion registrada: 2025-06-19 | Venta de disco SSD | 80.0 | InGrEso
+2025-06-19 19:39:29,570 - INFO - Transaccion registrada: 2025-06-18 | Compra de teclado Polaroid | 150.0 | eGRESo
+2025-06-19 19:39:29,573 - ERROR - El monto debe ser mayor a cero. - Linea: librodiario.MontoInvalidoError: El monto debe ser mayor a cero.
+2025-06-19 19:39:29,574 - ERROR - El monto debe ser mayor a cero. - Linea: librodiario.MontoInvalidoError: El monto debe ser mayor a cero.
+2025-06-19 19:39:29,575 - ERROR - Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'. - Linea: ValueError: Tipo de transaccion invalido, debe poner 'ingreso' o 'egreso'.
+2025-06-19 19:39:29,577 - ERROR - Formato de fecha invalido, debe usar el formato: yyyy-mm-dd. - Linea: ValueError: Formato de fecha invalido, debe usar el formato: yyyy-mm-dd.
+2025-06-19 19:39:29,577 - ERROR - Linea 7: could not convert string to float: 'formato' - Linea: ValueError: could not convert string to float: 'formato'
+2025-06-19 19:39:29,578 - ERROR - Linea 8: Formato incorrecto -> linea que;no cumple;formato
+2025-06-19 19:39:29,578 - ERROR - Linea 9: Formato incorrecto -> 

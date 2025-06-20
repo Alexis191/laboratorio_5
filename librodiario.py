@@ -55,6 +55,36 @@ class LibroDiario:
             logging.error(f"{e} - Linea: {error_line}")
             print(f"[ERROR] {e}")
 
+    def cargar_transacciones_desde_archivo(self, path: str) -> None:
+        """Carga transacciones desde un archivo .csv (separado por ;) y registra errores."""
+
+        try:
+            with open(path, "r", encoding="utf-8") as archivo:
+                linea_nro = 0
+                for linea in archivo:
+                    linea_nro += 1
+                    partes = linea.strip().split(";")
+
+                    # Verificar que tenga 4 columnas
+                    if len(partes) != 4:
+                        logging.error(f"Linea {linea_nro}: Formato incorrecto -> {linea.strip()}")
+                        continue
+
+                    fecha, descripcion, monto_str, tipo = partes
+
+                    try:
+                        monto = float(monto_str)
+                        self.agregar_transaccion(fecha, descripcion, monto, tipo)
+                    except Exception as e:
+                        import traceback
+                        error_line = traceback.format_exc().strip().splitlines()[-1]
+                        logging.error(f"Linea {linea_nro}: {e} - Linea: {error_line}")
+
+        except FileNotFoundError:
+            logging.critical(f"No se encontro el archivo: {path}")
+            print(f"[CRITICO] No se encontro el archivo: {path}")
+
+
     def calcular_resumen(self) -> Dict[str, float]:
         """Devuelve el resumen total de ingresos y egresos."""
         resumen = {"ingresos": 0.0, "egresos": 0.0}
